@@ -105,7 +105,7 @@ var PokedexAbilityPanel = PokedexResultPanel.extend({
 		var buf = '';
 		for (var pokemonid in BattlePokedex) {
 			var template = BattlePokedex[pokemonid];
-			if (template.isNonstandard && !ability.isNonstandard) continue;
+			if (template.isNonstandard && template.isNonstandard !== 'Fundex' && !ability.isNonstandard) continue;
 			if (template.abilities['0'] === ability.name || template.abilities['1'] === ability.name || template.abilities['H'] === ability.name) {
 				buf += BattleSearch.renderPokemonRow(template);
 			}
@@ -650,7 +650,7 @@ var PokedexEggGroupPanel = PokedexResultPanel.extend({
 			// var prevo = toID(pokemon.prevo);
 			if (!eggGroups || pokemon.forme) continue;
 			// || (prevo && BattlePokedex[prevo].eggGroups[0] !== "Undiscovered") - irrelevant in gen 9
-			if (pokemon && pokemon.isNonstandard) continue;
+			if (pokemon && pokemon.isNonstandard && pokemon.isNonstandard !== 'Fundex') continue;
 			if (eggGroups[0] === name || eggGroups[1] === name ||
 				eggGroups[0] === name2 || eggGroups[1] === name2) {
 				results.push(pokemonid);

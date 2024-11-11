@@ -366,7 +366,7 @@ var PokedexMovePanel = PokedexResultPanel.extend({
 							for (var breederid in BattleLearnsets) {
 								if (!BattleLearnsets[breederid].learnset || !BattleLearnsets[breederid].learnset[id]) continue;
 								var breeder = BattlePokedex[breederid];
-								if (breeder.isNonstandard) continue;
+								if (breeder.isNonstandard && breeder.isNonstandard !== 'Fundex') continue;
 								if (breeder.gender && breeder.gender !== 'M') continue;
 								if (breederid === pokemon.id || breederid === template.id || breederid === pokemon.prevo) continue;
 								if (eg1 === breeder.eggGroups[0] || eg1 === breeder.eggGroups[1] ||
