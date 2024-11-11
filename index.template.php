@@ -3,7 +3,7 @@
 
 	<meta charset="utf-8" />
 
-	<title>Pok&eacute;dex - Pok&eacute;mon Showdown</title>
+	<title>Fundex - Fun Community</title>
 
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=IE8" />
 	<link rel="stylesheet" href="/style/font-awesome.css" />
@@ -23,7 +23,7 @@
 		<div class="header">
 			<ul class="nav">
 				<li><a class="button nav-first" href="//pokemonshowdown.com/"><img src="/images/pokemonshowdownbeta.png" alt="Pok&eacute;mon Showdown! (beta)" /> Home</a></li>
-				<li><a class="button cur" href="/">Pok&eacute;dex</a></li>
+				<li><a class="button cur" href="/">Fundex</a></li>
 				<li><a class="button" href="//replay.pokemonshowdown.com/">Replays</a></li>
 				<li><a class="button" href="//pokemonshowdown.com/ladder/">Ladder</a></li>
 				<li><a class="button nav-last" href="//pokemonshowdown.com/forums/">Forum</a></li>
@@ -38,7 +38,7 @@
 <?php if ($_SERVER['REQUEST_URI'][0] === '/' && !ctype_alnum($_SERVER['REQUEST_URI'][1])) { ?>
 		<form class="pokedex">
 			<h1>
-				<a href="/">Pok&eacute;dex</a>
+				<a href="/">Fundex</a>
 			</h1>
 			<ul class="tabbar centered" style="margin-bottom: 18px"><li><button class="button nav-first cur" value="">Search</button></li><li><button class="button" value="pokemon/">Pokémon</button></li><li><button class="button nav-last" value="moves/">Moves</button></li></ul>
 			<div class="searchboxwrapper">
@@ -48,7 +48,7 @@
 				<strong>Requires JavaScript!</strong>
 			</p></noscript>
 			<p class="buttonbar">
-				<button type="submit" class="button"><strong>Pok&eacute;dex Search</strong></button> <button onclick="alert(['That\'s pretty cool.','Your mom\'s feeling lucky.','I see.','If you feel lucky for more than four hours, perhaps you should see a doctor.'][Math.floor(Math.random()*4)]); return false" class="button">I'm Feeling Lucky</button>
+				<button type="submit" class="button"><strong>Fundex Search</strong></button> <button onclick="alert(['Who do you think you are?','Chuck Norris is feeling lucky.','Zeeky boogy doog. *explodes*','The Game'][Math.floor(Math.random()*4)]); return false" class="button">I'm Feeling Lucky</button>
 			</p>
 		</form>
 		<div class="results">
