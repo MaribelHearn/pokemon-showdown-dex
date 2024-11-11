@@ -463,7 +463,7 @@ var PokedexMovePanel = PokedexResultPanel.extend({
 		var results = [];
 		for (var pokemonid in BattleLearnsets) {
 			if (!BattlePokedex[pokemonid] || !BattleLearnsets[pokemonid]) continue;
-			if (BattlePokedex[pokemonid].isNonstandard || !BattleLearnsets[pokemonid].learnset) continue;
+			if (BattlePokedex[pokemonid].isNonstandard && BattlePokedex[pokemonid].isNonstandard !== 'Fundex' || !BattleLearnsets[pokemonid].learnset) continue;
 			var sources = BattleLearnsets[pokemonid].learnset[moveid];
 			if (!sources) continue;
 			if (typeof sources === 'string') sources = [sources];
