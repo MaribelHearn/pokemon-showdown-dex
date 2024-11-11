@@ -19,9 +19,9 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
 		buf += '</h1>';
 
 		if (pokemon.isNonstandard) {
-			if (id === 'missingno') {
+			/*if (id === 'missingno') {
 				buf += '<div class="warning"><strong>Note:</strong> This is a glitch Pok&eacute;mon from Red/Blue/Yellow.</div>';
-			} else if (id.substr(0, 8) === 'pokestar') {
+			} else*/ if (id.substr(0, 8) === 'pokestar') {
 				buf += '<div class="warning"><strong>Note:</strong> This is a Pok&eacute;mon from <a href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9star_Studios" target="_blank">Pok&eacute;star Studios in Black 2 and White 2</a>.</div>';
 			} else if (pokemon.isNonstandard === 'Past') {
 				buf += '<div class="warning"><strong>Note:</strong> This Pok&eacute;mon is only usable in past generations and National Dex formats.</div>';
