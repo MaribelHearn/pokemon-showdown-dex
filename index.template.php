@@ -6,11 +6,11 @@
 	<title>Fundex - Fun Community</title>
 
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=IE8" />
-	<link rel="stylesheet" href="/style/font-awesome.css" />
+	<link rel="stylesheet" href="//ps.maribelhearn.com/style/font-awesome.css" />
 	<link rel="stylesheet" href="/theme/panels.css?" />
 	<link rel="stylesheet" href="/theme/main.css?" />
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<link rel="stylesheet" href="/style/utilichart.css?" />
+	<link rel="stylesheet" href="//ps.maribelhearn.com/style/utilichart.css?" />
 	<link rel="stylesheet" href="/theme/pokedex.css?" />
 
 	<!-- Workarounds for IE bugs to display trees correctly. -->
