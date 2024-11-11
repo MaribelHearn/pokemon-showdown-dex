@@ -29,6 +29,8 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
 				buf += '<div class="warning"><strong>Note:</strong> Pok&eacute;mon Let\'s Go, Pikachu! and Let\'s Go, Eevee! only.</div>';
 			} else if (pokemon.isNonstandard === 'Gigantamax') {
 				buf += '<div class="warning"><strong>Note:</strong> This Pok&eacute;mon is not obtainable in the games, even via hacking.</div>';
+			} else if (pokemon.isNonstandard === 'Fundex') {
+				buf += '<div class="warning"><strong>Note:</strong> This is a Fundex Pok&eacute;mon; only usable in Fundex tiers</div>';
 			} else if (pokemon.num > 0) {
 				buf += '<div class="warning"><strong>Note:</strong> This Pok&eacute;mon is unreleased.</div>';
 			} else {
