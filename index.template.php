@@ -24,9 +24,9 @@
 			<ul class="nav">
 				<li><a class="button nav-first" href="/"><img src="/images/pokemonshowdownbeta.png" alt="Fun Community" /> Home</a></li>
 				<li><a class="button cur" href="/">Fundex</a></li>
-				<li><a class="button" href="//replay.pokemonshowdown.com/">Replays</a></li>
+				<!--<li><a class="button" href="//replay.pokemonshowdown.com/">Replays</a></li>
 				<li><a class="button" href="//pokemonshowdown.com/ladder/">Ladder</a></li>
-				<li><a class="button nav-last" href="//pokemonshowdown.com/forums/">Forum</a></li>
+				<li><a class="button nav-last" href="//pokemonshowdown.com/forums/">Forum</a></li>-->
 			</ul>
 			<ul class="nav nav-play">
 				<li><a class="button greenbutton nav-first nav-last" href="http:/">Play</a></li>
