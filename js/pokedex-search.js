@@ -224,7 +224,7 @@ var PokedexSearchPanel = Panels.Panel.extend({
 		if (e.target.tagName === 'BUTTON' && e.target.name === 'lucky') {
 			e.preventDefault();
 			e.stopPropagation();
-			alert(['That\'s pretty cool.','Your mom\'s feeling lucky.','I see.','If you feel lucky for more than four hours, perhaps you should see a doctor.'][Math.floor(Math.random()*4)]);
+			alert(['Who do you think you are?','Chuck Norris is feeling lucky.','Zeeky boogy doog. *explodes*','The Game','Congratulations! You are the 100 millionth clicker and you just won a free iPod!'][Math.floor(Math.random()*4)]);
 			return;
 		}
 		var scrollLoc = this.$el.scrollTop();
