@@ -29,7 +29,7 @@
 				<li><a class="button nav-last" href="//pokemonshowdown.com/forums/">Forum</a></li>-->
 			</ul>
 			<ul class="nav nav-play">
-				<li><a class="button greenbutton nav-first nav-last" href="http:/">Play</a></li>
+				<li><a class="button greenbutton nav-first nav-last" href="https://ps.maribelhearn.com">Play</a></li>
 			</ul>
 			<div style="clear:both"></div>
 		</div>
@@ -48,7 +48,7 @@
 				<strong>Requires JavaScript!</strong>
 			</p></noscript>
 			<p class="buttonbar">
-				<button type="submit" class="button"><strong>Fundex Search</strong></button> <button onclick="alert(['Who do you think you are?','Chuck Norris is feeling lucky.','Zeeky boogy doog. *explodes*','The Game'][Math.floor(Math.random()*4)]); return false" class="button">I'm Feeling Lucky</button>
+				<button type="submit" class="button"><strong>Fundex Search</strong></button> <button onclick="alert(['Who do you think you are?', 'Do a barrel roll!', 'Chuck Norris is feeling lucky.', 'Zeeky boogy doog. *explodes*', 'The Game'][Math.floor(Math.random()*4)]); return false" class="button">I'm Feeling Lucky</button>
 			</p>
 		</form>
 		<div class="results">
