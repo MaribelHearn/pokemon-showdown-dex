@@ -31,6 +31,10 @@
 .pokedex.aboveresults .buttonbar {
 	display: none;
 }
+/* Fundex: hide non-Fundex headers */
+.header-generation1, .header-generation2, .header-generation3, .header-generation4, .header-generation5, .header-generation6, .header-generation7, .header-generation8, .header-cap {
+	display: none;
+}
 .searchboxwrapper {
 	margin: 0 6px 10px 0;
 	position: relative;
