@@ -29,9 +29,9 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
 				buf += '<div class="warning"><strong>Note:</strong> Pok&eacute;mon Let\'s Go, Pikachu! and Let\'s Go, Eevee! only.</div>';
 			} else if (pokemon.isNonstandard === 'Gigantamax') {
 				buf += '<div class="warning"><strong>Note:</strong> This Pok&eacute;mon is not obtainable in the games, even via hacking.</div>';
-			} else if (pokemon.num > 0) {
+			} else if (pokemon.num > 0 && pokemon.isNonstandard !== 'Fundex') {
 				buf += '<div class="warning"><strong>Note:</strong> This Pok&eacute;mon is unreleased.</div>';
-			} else {
+			} else if (pokemon.isNonstandard !== 'Fundex') {
 				buf += '<div class="warning"><strong>Note:</strong> This is a made-up Pok&eacute;mon by <a href="http://www.smogon.com/cap/" target="_blank">Smogon CAP</a>.</div>';
 			}
 		}
