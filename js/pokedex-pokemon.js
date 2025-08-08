@@ -10,7 +10,7 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
 		buf += '<a href="/" class="pfx-backbutton" data-target="back"><i class="fa fa-chevron-left"></i> Pok&eacute;dex</a>';
 		buf += '<a href="/tiers/'+toID(pokemon.tier)+'" data-target="push" class="tier">'+pokemon.tier+'</a>';
 		buf += '<h1>';
-		if (pokemon.forme && pokemon.isNonstandard !== 'Fundex') {
+		if (pokemon.forme && (pokemon.isNonstandard !== 'Fundex' || pokemon.forme !== 'Mega')) {
 			buf += '<a href="/pokemon/'+id+'" data-target="push" class="subtle">'+pokemon.baseSpecies+'<small>-'+pokemon.forme+'</small></a>';
 		} else {
 			buf += '<a href="/pokemon/'+id+'" data-target="push" class="subtle">'+pokemon.name+'</a>';
