@@ -41,7 +41,8 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
 		buf += '<dl class="typeentry">';
 		buf += '<dt>Types:</dt> <dd>';
 		for (var i=0; i<pokemon.types.length; i++) {
-			buf += '<a class="type '+toID(pokemon.types[i])+'" href="/types/'+toID(pokemon.types[i])+'" data-target="push">'+pokemon.types[i]+'</a> ';
+			const id = pokemon.types[i] === '???' ? 'unknown' : toID(pokemon.types[i]);
+			buf += '<a class="type '+id+'" href="/types/'+id+'" data-target="push">'+pokemon.types[i]+'</a> ';
 		}
 		buf += '</dd>';
 		buf += '</dl>';
