@@ -117,6 +117,7 @@ var PokedexTypePanel = PokedexResultPanel.extend({
 	initialize: function(id) {
 		id = toID(id);
 		this.type = id[0].toUpperCase()+id.substr(1);
+		if (id === 'unknown') this.type = '???';
 		var type = Dex.types.get(this.type);
 		this.shortTitle = this.type;
 
