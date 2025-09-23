@@ -566,32 +566,32 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
 				'Byakuren', 'Nue', 'Ichirin', 'Sunny Milk', 'Luna Child', 'Star Sapphire', 'Sanae', 'Kanako', 'Ran', 'Hina', 'Chen', 'Reisen',
 				'Parsee', 'Rin', 'Daiyousei', 'Konngara', 'Yumeko', 'Rumia', 'Koakuma', 'Youmu', 'Mystia', 'Tewi', 'Aya', 'Kisume'];
 
-		if (touhouFaintCry.includes(pokemon.speciesForme)) {
+		if (touhouFaintCry.includes(pokemon.name)) {
 			faintCry = 'touhou';
 		}
 
 		var telefangFaintCry = ['Yarrow', 'Doomsday', 'Kanzou', 'Hagumanoki', 'Ruscus', 'Ryuuguu'];
 
-		if (telefangFaintCry.includes(pokemon.speciesForme)) {
+		if (telefangFaintCry.includes(pokemon.name)) {
 			faintCry = 'telefang';
 		}
 
 		var digitalFaintCry = ['Blue Screen of Death', 'Internet Explorer', 'Inori Aizawa', 'Microsoft Edge', 'Mozilla Firefox', 'Google Chrome', 'Recycle Bin'];
 
-		if (digitalFaintCry.includes(pokemon.speciesForme)) {
+		if (digitalFaintCry.includes(pokemon.name)) {
 			faintCry = 'digital';
 		}
 
 		var labyrinthFaintCry = ['Hibachi', 'Hibachi 2', 'Evaccania DOOM', 'Berserk Maribel', 'Serpent of Chaos', '*** WINNER ***'];
 
-		if (labyrinthFaintCry.includes(pokemon.speciesForme)) {
+		if (labyrinthFaintCry.includes(pokemon.name)) {
 			faintCry = 'lot';
 		}
 
 		// temporary
 		var marioFaintCry = ['Mario', 'Paper Mario', 'Malleo', 'Luigi', 'Mr. L', 'Weegee', 'Baby Bowser', 'Giga Bowser', 'Dry Bowser', 'Boo', 'Boolussus', 'King Boo', 'Wiggler', 'Angry Wiggler'];
 
-		if (marioFaintCry.includes(pokemon.speciesForme)) {
+		if (marioFaintCry.includes(pokemon.name)) {
 			faintCry = 'mario';
 		}
 
