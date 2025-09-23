@@ -30,7 +30,7 @@ var PokedexItemPanel = PokedexResultPanel.extend({
 		buf += '<p>'+Dex.escapeHTML(item.desc||item.shortDesc)+'</p>';
 
 		// past gens
-		var pastGenChanges = false;
+		/*var pastGenChanges = false;
 		for (var genNum = Dex.gen - 1; genNum >= item.gen; genNum--) {
 			var nextGenItem = Dex.forGen(genNum + 1).items.get(id);
 			var curGenItem = Dex.forGen(genNum).items.get(id);
@@ -47,7 +47,7 @@ var PokedexItemPanel = PokedexResultPanel.extend({
 				pastGenChanges = true;
 			}
 		}
-		if (pastGenChanges) buf += '</dl>';
+		if (pastGenChanges) buf += '</dl>';*/
 
 		buf += '</div>';
 

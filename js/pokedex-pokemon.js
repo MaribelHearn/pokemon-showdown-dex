@@ -207,7 +207,7 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
 		}
 
 		// past gens
-		var pastGenChanges = false;
+		/*var pastGenChanges = false;
 		for (var genNum = Dex.gen - 1; genNum >= pokemon.gen; genNum--) {
 			var nextGenSpecies = Dex.forGen(genNum + 1).species.get(id);
 			var curGenSpecies = Dex.forGen(genNum).species.get(id);
@@ -248,7 +248,7 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
 				pastGenChanges = true;
 			}
 		}
-		if (pastGenChanges) buf += '</dl>';
+		if (pastGenChanges) buf += '</dl>';*/
 
 		// learnset
 		if (window.BattleLearnsets && BattleLearnsets[id] && BattleLearnsets[id].eventData) {

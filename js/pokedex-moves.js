@@ -22,9 +22,9 @@ var PokedexMovePanel = PokedexResultPanel.extend({
 		} else if (move.isNonstandard) {
 			buf += '<div class="warning"><strong>Note:</strong> ';
 			switch (move.isNonstandard) {
-			case 'Past':
+			/*case 'Past':
 				buf += 'This move is only available in past generations.';
-				break;
+				break;*/
 			case 'Future':
 				buf += 'This move is only available in future generations.';
 				break;
