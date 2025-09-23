@@ -185,7 +185,8 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
 		buf += '</dd></dl>';
 
 		if (pokemon.eggGroups) {
-			buf += '<dl class="colentry"><dt>Egg groups:</dt><dd><span class="picon" style="margin-top:-12px;'+Dex.getPokemonIcon('egg')+'"></span><a href="/egggroups/'+pokemon.eggGroups.map(toID).join('+')+'" data-target="push">'+pokemon.eggGroups.join(', ')+'</a></dd></dl>';
+			// Fundex: hide egg groups
+			//buf += '<dl class="colentry"><dt>Egg groups:</dt><dd><span class="picon" style="margin-top:-12px;'+Dex.getPokemonIcon('egg')+'"></span><a href="/egggroups/'+pokemon.eggGroups.map(toID).join('+')+'" data-target="push">'+pokemon.eggGroups.join(', ')+'</a></dd></dl>';
 			buf += '<dl class="colentry"><dt>Gender ratio:</dt><dd>';
 			if (pokemon.gender) switch (pokemon.gender) {
 			case 'M':
