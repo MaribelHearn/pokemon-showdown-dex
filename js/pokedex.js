@@ -187,6 +187,10 @@ var PokedexTypePanel = PokedexResultPanel.extend({
 				atLeastOne = true;
 			}
 		}
+		if (type === '???') {
+			buf += '<div><small><a href="/moves/glitchyterrain" data-target="push">Glitchy Terrain</a> damage</small></div>';
+			atLeastOne = true;
+		}
 		if (!atLeastOne) {
 			if (atLeastOne === null) {
 				buf += '<div><em>No type immunities</em></div>';
