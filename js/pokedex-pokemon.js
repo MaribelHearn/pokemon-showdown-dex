@@ -555,6 +555,48 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
 
 		buf += '<li class="content"><audio src="' + Dex.resourcePrefix + 'audio/cries/' + pokemon.spriteid + '.mp3" controls="controls"><a href="' + Dex.resourcePrefix + 'audio/cries/' + pokemon.spriteid + '.mp3">Play</a></audio></li>';
 
+		// faint cry
+		var faintCry = pokemon.spriteid;
+		buf += '<li class="resultheader"><h3>Faint Cry</h3></li>';
+
+		var touhouFaintCry = ['Flandre', 'Marisa', 'Lily White', 'Cirno', 'Achi Cirno', 'Reimu', 'Utsuho', 'Yuyuko', 'Remilia', 'Sakuya',
+				'Wriggle', 'Eirin', 'Kaguya', 'Tenshi', 'Suika', 'Letty', 'Keine', 'Keine-Hakutaku', 'Yumemi', 'Mokou', 'Yuugi', 'Komachi', 'Eiki',
+				'Yukari', 'Yamame', 'Iku', 'Medicine', 'Yuuka', 'Minoriko', 'Shizuha', 'Alice', 'Genjii', 'VIVIT', 'Angel VIVIT', 'Maribel', 'Kogasa',
+				'Meiling', 'Patchouli', 'Suwako', 'Shingyoku', 'Shingyoku-Priestess', 'Shingyoku-Orb', 'Sariel', 'Satori', 'Koishi', 'Nitori',
+				'Byakuren', 'Nue', 'Ichirin', 'Sunny Milk', 'Luna Child', 'Star Sapphire', 'Sanae', 'Kanako', 'Ran', 'Hina', 'Chen', 'Reisen',
+				'Parsee', 'Rin', 'Daiyousei', 'Konngara', 'Yumeko', 'Rumia', 'Koakuma', 'Youmu', 'Mystia', 'Tewi', 'Aya', 'Kisume'];
+
+		if (touhouFaintCry.includes(pokemon.speciesForme)) {
+			faintCry = 'touhou';
+		}
+
+		var telefangFaintCry = ['Yarrow', 'Doomsday', 'Kanzou', 'Hagumanoki', 'Ruscus', 'Ryuuguu'];
+
+		if (telefangFaintCry.includes(pokemon.speciesForme)) {
+			faintCry = 'telefang';
+		}
+
+		var digitalFaintCry = ['Blue Screen of Death', 'Internet Explorer', 'Inori Aizawa', 'Microsoft Edge', 'Mozilla Firefox', 'Google Chrome', 'Recycle Bin'];
+
+		if (digitalFaintCry.includes(pokemon.speciesForme)) {
+			faintCry = 'digital';
+		}
+
+		var labyrinthFaintCry = ['Hibachi', 'Hibachi 2', 'Evaccania DOOM', 'Berserk Maribel', 'Serpent of Chaos', '*** WINNER ***'];
+
+		if (labyrinthFaintCry.includes(pokemon.speciesForme)) {
+			faintCry = 'lot';
+		}
+
+		// temporary
+		var marioFaintCry = ['Mario', 'Paper Mario', 'Malleo', 'Luigi', 'Mr. L', 'Weegee', 'Baby Bowser', 'Giga Bowser', 'Dry Bowser', 'Boo', 'Boolussus', 'King Boo', 'Wiggler', 'Angry Wiggler'];
+
+		if (marioFaintCry.includes(pokemon.speciesForme)) {
+			faintCry = 'mario';
+		}
+
+		buf += '<li class="content"><audio src="' + Dex.resourcePrefix + 'audio/cries/' + faintCry + '-faint.mp3" controls="controls"><a href="' + Dex.resourcePrefix + 'audio/cries/' + pokemon.spriteid + '.mp3">Play</a></audio></li>';
+
 		// still gen 5
 		if (this.id !== 'pichuspikyeared') {
 			buf += '<li class="resultheader"><h3>Gen 5 Sprites</h3></li>';
