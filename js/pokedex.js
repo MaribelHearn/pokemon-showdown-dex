@@ -187,7 +187,7 @@ var PokedexTypePanel = PokedexResultPanel.extend({
 				atLeastOne = true;
 			}
 		}
-		if (type === '???' || type === 'unknown') {
+		if (type.name === '???') {
 			buf += '<div><small><a href="/moves/glitchyterrain" data-target="push">Glitchy Terrain</a> damage</small></div>';
 			atLeastOne = true;
 		}
