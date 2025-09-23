@@ -19,7 +19,8 @@ var PokedexMovePanel = PokedexResultPanel.extend({
 
 		if (move.id === 'magikarpsrevenge') {
 			buf += '<div class="warning"><strong>Note:</strong> Made for testing on Pok&eacute;mon Showdown, not a real move.</div>';
-		} else if (move.isNonstandard) {
+		// Fundex: remove past gens
+		} else if (move.isNonstandard && move.isNonstandard !== 'Past') {
 			buf += '<div class="warning"><strong>Note:</strong> ';
 			switch (move.isNonstandard) {
 			/*case 'Past':
