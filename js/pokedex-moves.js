@@ -53,7 +53,7 @@ var PokedexMovePanel = PokedexResultPanel.extend({
 
 		buf += '<dl class="movetypeentry">';
 		buf += '<dt>Type:</dt> <dd>';
-		buf += '<a class="type '+toID(move.type)+'" href="/types/'+toID(move.type)+'" data-target="push">'+move.type+'</a> ';
+		buf += '<a class="type '+(move.type === '???' ? 'unknown' : toID(move.type))+'" href="/types/'+(move.type === '???' ? 'unknown' : toID(move.type))+'" data-target="push">'+move.type+'</a> ';
 		buf += '<a class="type '+toID(move.category)+'" href="/categories/'+toID(move.category)+'" data-target="push">'+move.category+'</a>';
 		buf += '</dd></dl>';
 
