@@ -537,8 +537,9 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
 		buf += '<li class="resultheader"><h3>Flavor</h3></li>';
 		buf += '<li><dl><dt>Color:</dt><dd>'+pokemon.color+'</dd></dl></li>';
 
+		// Fundex: hide animated sprites
 		// animated gen 6
-		if (pokemon.num > 0 && pokemon.gen < 10 && this.id !== 'missingno' && this.id !== 'pichuspikyeared') {
+		/*if (pokemon.num > 0 && pokemon.gen < 10 && this.id !== 'missingno' && this.id !== 'pichuspikyeared') {
 			buf += '<li class="resultheader"><h3>Animated Gen 6-9 sprites</h3></li>';
 
 			buf += '<li class="content"><table class="sprites"><tr><td><img src="' + Dex.resourcePrefix + 'sprites/ani/' + pokemon.spriteid + '.gif" /></td>';
@@ -547,7 +548,7 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
 			buf += '<td><img src="' + Dex.resourcePrefix + 'sprites/ani-back-shiny/' + pokemon.spriteid + '.gif" /></td></table>';
 
 			buf += '<div style="clear:left"></div></li>';
-		}
+		}*/
 
 		// cry
 		buf += '<li class="resultheader"><h3>Cry</h3></li>';
