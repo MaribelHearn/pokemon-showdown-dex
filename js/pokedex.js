@@ -804,7 +804,7 @@ var PokedexTierPanel = PokedexResultPanel.extend({
 			fundexuu: "Fundex UU",
 			fundexru: "Fundex RU",
 			fundexnu: "Fundex NU",
-			fundxpu: "Fundex PU",
+			fundexpu: "Fundex PU",
 			fundexlc: "Fundex LC",
 			uubl: "Fundex UUBL",
 			rubl: "Fundex RUBL",
