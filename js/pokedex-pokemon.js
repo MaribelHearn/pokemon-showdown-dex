@@ -563,38 +563,38 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
 		buf += '<li class="resultheader"><h3>Faint Cry</h3></li>';
 
 		var touhouFaintCry = ['Flandre', 'Marisa', 'Lily White', 'Cirno', 'Achi Cirno', 'Reimu', 'Utsuho', 'Yuyuko', 'Remilia', 'Sakuya',
-				'Wriggle', 'Eirin', 'Kaguya', 'Tenshi', 'Suika', 'Letty', 'Keine', 'Keine-Hakutaku', 'Yumemi', 'Mokou', 'Yuugi', 'Komachi', 'Eiki',
-				'Yukari', 'Yamame', 'Iku', 'Medicine', 'Yuuka', 'Minoriko', 'Shizuha', 'Alice', 'Genjii', 'VIVIT', 'Angel VIVIT', 'Maribel', 'Kogasa',
-				'Meiling', 'Patchouli', 'Suwako', 'Shingyoku', 'Shingyoku-Priestess', 'Shingyoku-Orb', 'Sariel', 'Satori', 'Koishi', 'Nitori',
-				'Byakuren', 'Nue', 'Ichirin', 'Sunny Milk', 'Luna Child', 'Star Sapphire', 'Sanae', 'Kanako', 'Ran', 'Hina', 'Chen', 'Reisen',
-				'Parsee', 'Rin', 'Daiyousei', 'Konngara', 'Yumeko', 'Rumia', 'Koakuma', 'Youmu', 'Mystia', 'Tewi', 'Aya', 'Kisume'];
+			'Wriggle', 'Eirin', 'Kaguya', 'Tenshi', 'Suika', 'Letty', 'Keine', 'Keine-Hakutaku', 'Yumemi', 'Mokou', 'Yuugi', 'Komachi', 'Eiki',
+			'Yukari', 'Yamame', 'Iku', 'Medicine', 'Yuuka', 'Minoriko', 'Shizuha', 'Alice', 'Genjii', 'Maribel', 'Kogasa',
+			'Meiling', 'Patchouli', 'Suwako', 'Shingyoku', 'Shingyoku-Priestess', 'Shingyoku-Priest', 'Sariel', 'Satori', 'Koishi', 'Nitori',
+			'Byakuren', 'Nue', 'Ichirin', 'Sunny Milk', 'Luna Child', 'Star Sapphire', 'Sanae', 'Kanako', 'Ran', 'Hina', 'Chen', 'Reisen',
+			'Parsee', 'Rin', 'Daiyousei', 'Konngara', 'Yumeko', 'Rumia', 'Koakuma', 'Youmu', 'Mystia', 'Tewi', 'Aya', 'Kisume'];
+
+		var seihouFaintCry = ['VIVIT', 'Angel VIVIT'];
+
+		var telefangFaintCry = ['Yarrow', 'Doomsday', 'Kanzou', 'Hagumanoki', 'Ruscus', 'Ryuuguu'];
+
+		var digitalFaintCry = ['Blue Screen of Death', 'Internet Explorer', 'Inori Aizawa', 'Microsoft Edge', 'Mozilla Firefox', 'Google Chrome', 'Recycle Bin'];
+
+		var labyrinthFaintCry = ['Hibachi', 'Hibachi 2', 'Evaccania DOOM', 'Berserk Maribel', 'Serpent of Chaos', '*** WINNER ***'];
+
+		var marioFaintCry = ['Mario', 'Paper Mario', 'Malleo', 'Luigi', 'Mr. L', 'Weegee', 'Baby Bowser', 'Giga Bowser', 'Dry Bowser', 'Boo', 'Boolussus', 'King Boo', 'Wiggler', 'Angry Wiggler'];
 
 		if (touhouFaintCry.includes(pokemon.name)) {
 			faintCry = 'touhou';
 		}
-
-		var telefangFaintCry = ['Yarrow', 'Doomsday', 'Kanzou', 'Hagumanoki', 'Ruscus', 'Ryuuguu'];
-
-		if (telefangFaintCry.includes(pokemon.name)) {
+		else if (seihouFaintCry.includes(pokemon.name)) {
+			faintCry = 'seihou';
+		}
+		else if (telefangFaintCry.includes(pokemon.name)) {
 			faintCry = 'telefang';
 		}
-
-		var digitalFaintCry = ['Blue Screen of Death', 'Internet Explorer', 'Inori Aizawa', 'Microsoft Edge', 'Mozilla Firefox', 'Google Chrome', 'Recycle Bin'];
-
-		if (digitalFaintCry.includes(pokemon.name)) {
+		else if (digitalFaintCry.includes(pokemon.name)) {
 			faintCry = 'digital';
 		}
-
-		var labyrinthFaintCry = ['Hibachi', 'Hibachi 2', 'Evaccania DOOM', 'Berserk Maribel', 'Serpent of Chaos', '*** WINNER ***'];
-
-		if (labyrinthFaintCry.includes(pokemon.name)) {
+		else if (labyrinthFaintCry.includes(pokemon.name)) {
 			faintCry = 'lot';
 		}
-
-		// temporary
-		var marioFaintCry = ['Mario', 'Paper Mario', 'Malleo', 'Luigi', 'Mr. L', 'Weegee', 'Baby Bowser', 'Giga Bowser', 'Dry Bowser', 'Boo', 'Boolussus', 'King Boo', 'Wiggler', 'Angry Wiggler'];
-
-		if (marioFaintCry.includes(pokemon.name)) {
+		else if (marioFaintCry.includes(pokemon.name)) {
 			faintCry = 'mario';
 		}
 
