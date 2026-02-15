@@ -132,7 +132,8 @@
 }
 .dexentry dl.powerentry,
 .dexentry dl.accuracyentry,
-.dexentry dl.ppentry {
+.dexentry dl.ppentry,
+.dexentry dl.zentry {
 	float: left;
 	margin: 0;
 	width: 90px;
@@ -144,7 +145,8 @@
     padding-top: 3px;
 	font-size: 20pt;
 }
-.dexentry dl.ppentry dd {
+.dexentry dl.ppentry dd,
+.dexentry dl.zentry dd {
     padding-top: 2px;
 	font-size: 13pt;
     color: #555;

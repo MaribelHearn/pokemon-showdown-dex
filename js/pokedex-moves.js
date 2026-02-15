@@ -61,8 +61,32 @@ var PokedexMovePanel = PokedexResultPanel.extend({
 			buf += '<dl class="powerentry"><dt>Base power:</dt> <dd><strong>'+(move.basePower||'&mdash;')+'</strong></dd></dl>';
 		}
 		buf += '<dl class="accuracyentry"><dt>Accuracy:</dt> <dd>'+(move.accuracy && move.accuracy!==true?move.accuracy+'%':'&mdash;')+'</dd></dl>';
-		buf += '<dl class="ppentry"><dt>PP:</dt> <dd>'+(move.pp)+(move.pp>1 ? ' <small class="minor">(max: '+(8/5*move.pp)+')</small>' : '')+'</dd>';
-		buf += '</dl><div style="clear:left;padding-top:1px"></div>';
+		buf += '<dl class="ppentry"><dt>PP:</dt> <dd>'+(move.pp)+(move.pp>1 ? ' <small class="minor">(max: '+(8/5*move.pp)+')</small>' : '')+'</dd></dl>';
+		if (move?.zMove.basePower) {
+			buf += '<dl class="zentry"><dt>Z-Power:</dt> <dd>'+(move.zMove.basePower)+'</dd></dl>';
+		}
+		if (move?.zMove.effect) {
+			const zEffects = {
+				nothing: "Does nothing",
+				clearnegativeboost: "Restores negative stat stages to 0",
+				crit2: "Crit ratio +2",
+				heal: "Restores HP 100%",
+				curse: "Restores HP 100% if user is Ghost type, otherwise Attack +1",
+				redirect: "Redirects opposing attacks to user",
+				healreplacement: "Restores replacement's HP 100%",
+			};
+			buf += '<dl class="zentry"><dt>Z-Effect:</dt> <dd>'+(zEffects[move.zMove.effect])+'</dd></dl>';
+		}
+		if (move?.zMove.boost) {
+			let boostText = '';
+			const boost = move.zMove.boost;
+			const stats = {atk: 'Attack', def: 'Defense', spa: 'Sp. Atk', spd: 'Sp. Def', spe: 'Speed', accuracy: 'Accuracy', evasion: 'Evasiveness'};
+			for (h in boost) {
+				boostText += ` ${stats[h]} +${boost[h]}`;
+			}
+			buf += '<dl class="zentry"><dt>Z-Effect:</dt> <dd>'+(boostText.trim())+'</dd></dl>';
+		}
+		buf += '<div style="clear:left;padding-top:1px"></div>';
 
 		if (move.isZ) {
 			buf += '<p><strong><a href="/tags/zmove" data-target="push">[Z-Move]</a></strong>';
