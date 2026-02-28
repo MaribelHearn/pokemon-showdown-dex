@@ -260,7 +260,8 @@ var PokedexTypePanel = PokedexResultPanel.extend({
 		var pureBuf = '<li class="resultheader"><h3>Pure '+type+' Pok&eacute;mon</h3></li>';
 		for (var templateid in BattlePokedex) {
 			var template = BattlePokedex[templateid];
-			if (template.types[0] === type && !template.types[1]) {
+			if (template.isNonstandard !== 'Fundex') continue;
+			if (template.num >= 2000 && template.types[0] === type && !template.types[1]) {
 				pureBuf += BattleSearch.renderPokemonRow(template);
 			}
 		}
@@ -275,6 +276,7 @@ var PokedexTypePanel = PokedexResultPanel.extend({
 		var secondaryBuf = '<li class="resultheader"><h3>Secondary '+type+' Pok&eacute;mon</h3></li>';
 		for (var templateid in BattlePokedex) {
 			var template = BattlePokedex[templateid];
+			if (template.isNonstandard !== 'Fundex') continue;
 			if (template.types[0] === type) {
 				if (template.types[1]) {
 					primaryBuf += BattleSearch.renderPokemonRow(template);
