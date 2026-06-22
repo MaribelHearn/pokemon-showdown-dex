@@ -577,7 +577,9 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
 
 		var labyrinthFaintCry = ['Hibachi', 'Hibachi 2', 'Evaccania DOOM', 'Berserk Maribel', 'Serpent of Chaos', '*** WINNER ***'];
 
-		var marioFaintCry = ['Mario', 'Paper Mario', 'Malleo', 'Luigi', 'Mr. L', 'Weegee', 'Baby Bowser', 'Giga Bowser', 'Dry Bowser', 'Boo', 'Boolussus', 'King Boo', 'Wiggler', 'Angry Wiggler'];
+		var angrybirdsFaintCry = ['Angry Bird', 'Big Brother'];
+
+		//var marioFaintCry = ['Mario', 'Paper Mario', 'Malleo', 'Luigi', 'Mr. L', 'Weegee', 'Baby Bowser', 'Giga Bowser', 'Dry Bowser', 'Boo', 'Boolussus', 'King Boo', 'Wiggler', 'Angry Wiggler'];
 
 		if (touhouFaintCry.includes(pokemon.name)) {
 			faintCry = 'touhou';
@@ -594,8 +596,8 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
 		else if (labyrinthFaintCry.includes(pokemon.name)) {
 			faintCry = 'lot';
 		}
-		else if (marioFaintCry.includes(pokemon.name)) {
-			faintCry = 'mario';
+		else if (angrybirdsFaintCry.includes(pokemon.speciesForme)) {
+			faintCry = 'angrybird';
 		}
 
 		buf += '<li class="content"><audio src="' + Dex.resourcePrefix + 'audio/cries/' + faintCry + '-faint.mp3" controls="controls"><a href="' + Dex.resourcePrefix + 'audio/cries/' + pokemon.spriteid + '.mp3">Play</a></audio></li>';
