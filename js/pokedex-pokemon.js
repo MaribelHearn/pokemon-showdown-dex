@@ -608,7 +608,7 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
 			buf += '<li class="resultheader"><h3>Shiny Cry</h3></li>';
 			buf += '<li class="content"><audio src="' + Dex.resourcePrefix + 'audio/cries/' + pokemon.spriteid + '-shiny.mp3" controls="controls"><a href="' + Dex.resourcePrefix + 'audio/cries/' + pokemon.spriteid + '-shiny.mp3">Play</a></audio></li>';
 			buf += '<li class="resultheader"><h3>Shiny Faint Cry</h3></li>';
-			buf += '<li class="content"><audio src="' + Dex.resourcePrefix + 'audio/cries/' + pokemon.spriteid + '-shiny-faint.mp3" controls="controls"><a href="' + Dex.resourcePrefix + 'audio/cries/' + pokemon.spriteid + '-shiny-faint.mp3">Play</a></audio></li>';
+			buf += '<li class="content"><audio src="' + Dex.resourcePrefix + 'audio/cries/' + pokemon.spriteid + '-faint-shiny.mp3" controls="controls"><a href="' + Dex.resourcePrefix + 'audio/cries/' + pokemon.spriteid + '-faint-shiny.mp3">Play</a></audio></li>';
 		}
 
 		// still gen 5
