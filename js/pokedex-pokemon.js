@@ -581,7 +581,7 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
 
 		//var marioFaintCry = ['Mario', 'Paper Mario', 'Malleo', 'Luigi', 'Mr. L', 'Weegee', 'Baby Bowser', 'Giga Bowser', 'Dry Bowser', 'Boo', 'Boolussus', 'King Boo', 'Wiggler', 'Angry Wiggler'];
 
-		const shinyCry = ['Andross', 'Angry Bird', 'Big Brother', 'Ganondorf', 'Mario', 'Luigi', 'Bowser', 'Nyan Cat'];
+		const shinyCry = ['Andross', 'Angry Bird', 'Big Brother', 'Ganondorf', 'Mario', 'Luigi', 'Bowser', 'Nyan Cat', 'Zeeky H. Bomb'];
 
 		if (touhouFaintCry.includes(pokemon.name)) {
 			faintCry = 'touhou';
