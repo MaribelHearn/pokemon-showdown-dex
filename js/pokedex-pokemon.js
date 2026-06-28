@@ -581,6 +581,8 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
 
 		//var marioFaintCry = ['Mario', 'Paper Mario', 'Malleo', 'Luigi', 'Mr. L', 'Weegee', 'Baby Bowser', 'Giga Bowser', 'Dry Bowser', 'Boo', 'Boolussus', 'King Boo', 'Wiggler', 'Angry Wiggler'];
 
+		const shinyCry = ['Andross', 'Angry Bird', 'Big Brother', 'Ganondorf', 'Mario', 'Luigi', 'Bowser', 'Nyan Cat'];
+
 		if (touhouFaintCry.includes(pokemon.name)) {
 			faintCry = 'touhou';
 		}
@@ -600,7 +602,14 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
 			faintCry = 'angrybird';
 		}
 
-		buf += '<li class="content"><audio src="' + Dex.resourcePrefix + 'audio/cries/' + faintCry + '-faint.mp3" controls="controls"><a href="' + Dex.resourcePrefix + 'audio/cries/' + pokemon.spriteid + '.mp3">Play</a></audio></li>';
+		buf += '<li class="content"><audio src="' + Dex.resourcePrefix + 'audio/cries/' + faintCry + '-faint.mp3" controls="controls"><a href="' + Dex.resourcePrefix + 'audio/cries/' + faintCry + '-faint.mp3">Play</a></audio></li>';
+
+		if (shinyCry.includes(pokemon.name)) {
+			buf += '<li class="resultheader"><h3>Shiny Cry</h3></li>';
+			buf += '<li class="content"><audio src="' + Dex.resourcePrefix + 'audio/cries/' + pokemon.spriteid + '-shiny.mp3" controls="controls"><a href="' + Dex.resourcePrefix + 'audio/cries/' + pokemon.spriteid + '-shiny.mp3">Play</a></audio></li>';
+			buf += '<li class="resultheader"><h3>Shiny Faint Cry</h3></li>';
+			buf += '<li class="content"><audio src="' + Dex.resourcePrefix + 'audio/cries/' + pokemon.spriteid + '-shiny-faint.mp3" controls="controls"><a href="' + Dex.resourcePrefix + 'audio/cries/' + pokemon.spriteid + '-shiny-faint.mp3">Play</a></audio></li>';
+		}
 
 		// still gen 5
 		if (this.id !== 'pichuspikyeared') {
