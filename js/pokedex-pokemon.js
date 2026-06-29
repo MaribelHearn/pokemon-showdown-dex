@@ -556,7 +556,15 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
 		// cry
 		buf += '<li class="resultheader"><h3>Cry</h3></li>';
 
-		buf += '<li class="content"><audio src="' + Dex.resourcePrefix + 'audio/cries/' + pokemon.spriteid + '.mp3" controls="controls"><a href="' + Dex.resourcePrefix + 'audio/cries/' + pokemon.spriteid + '.mp3">Play</a></audio></li>';
+		var cry = pokemon.spriteid;
+
+		var digitalCry = ['Internet Explorer', 'Inori Aizawa', 'Microsoft Edge', 'Mozilla Firefox', 'Google Chrome', 'Recycle Bin'];
+
+		if (digitalCry.includes(pokemon.name)) {
+			cry = 'digital-entry';
+		}
+
+		buf += '<li class="content"><audio src="' + Dex.resourcePrefix + 'audio/cries/' + cry + '.mp3" controls="controls"><a href="' + Dex.resourcePrefix + 'audio/cries/' + cry + '.mp3">Play</a></audio></li>';
 
 		// faint cry
 		var faintCry = pokemon.spriteid;
