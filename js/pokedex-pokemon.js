@@ -581,7 +581,7 @@ var PokedexPokemonPanel = PokedexResultPanel.extend({
 
 		var telefangFaintCry = ['Yarrow', 'Doomsday', 'Kanzou', 'Hagumanoki', 'Ruscus', 'Ryuuguu'];
 
-		var digitalFaintCry = ['Blue Screen of Death', 'Internet Explorer', 'Inori Aizawa', 'Microsoft Edge', 'Mozilla Firefox', 'Google Chrome', 'Recycle Bin'];
+		var digitalFaintCry = ['Blue Screen', 'Internet Explorer', 'Inori Aizawa', 'Microsoft Edge', 'Mozilla Firefox', 'Google Chrome', 'Recycle Bin'];
 
 		var labyrinthFaintCry = ['Hibachi', 'Hibachi 2', 'Evaccania DOOM', 'Berserk Maribel', 'Serpent of Chaos', '*** WINNER ***'];
 
